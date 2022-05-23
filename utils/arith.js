@@ -1,9 +1,7 @@
+import { arrayOfNumbers } from './array.js';
+
 export const sum = (nums = []) => {
-  if (!Array.isArray(nums)) return;
-
-  const notNumbers = nums.filter((el) => typeof el !== 'number');
-
-  if (notNumbers.length > 0) return;
+  if (!arrayOfNumbers(nums)) return;
 
   if (nums.length === 0) return 0;
 
@@ -11,11 +9,7 @@ export const sum = (nums = []) => {
 };
 
 export const avg = (nums = []) => {
-  if (!Array.isArray(nums)) return;
-
-  const notNumbers = nums.filter((el) => typeof el !== 'number');
-
-  if (notNumbers.length > 0) return;
+  if (!arrayOfNumbers(nums)) return;
 
   if (nums.length === 0) return 0;
 
