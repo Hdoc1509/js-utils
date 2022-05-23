@@ -4,9 +4,6 @@
     "es6": true,
     "jest": true
   },
-  "globals": {
-    "axios": "readonly"
-  },
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
