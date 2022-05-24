@@ -1,6 +1,8 @@
 export const arrayOfNumbers = (arr = []) => {
   if (!Array.isArray(arr)) return false;
 
+  if (arr.length === 0) return false;
+
   const notNumbers = arr.filter((el) => typeof el !== 'number');
 
   if (notNumbers.length > 0) return false;
