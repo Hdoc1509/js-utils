@@ -1,8 +1,8 @@
 import { sum } from '../../utils/arith.js';
 
 describe('--- SUM ---', () => {
-  test('No arguments returns 0', () => {
-    expect(sum()).toBe(0);
+  test('No argument returns undefined', () => {
+    expect(sum()).toBeUndefined();
   });
 
   test('Argument is not an array of numbers returns undefined', () => {
@@ -11,8 +11,8 @@ describe('--- SUM ---', () => {
     expect(sum(['string', {}, [null]])).toBeUndefined();
   });
 
-  test('Empty array as argument returns 0', () => {
-    expect(sum([])).toBe(0);
+  test('Empty array as argument returns undefined', () => {
+    expect(sum([])).toBeUndefined();
   });
 
   test('Add 1 + 2 correctly', () => {

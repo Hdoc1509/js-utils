@@ -1,8 +1,8 @@
 import { avg } from '../../utils/arith.js';
 
 describe('--- AVG ---', () => {
-  test('No arguments returns 0', () => {
-    expect(avg()).toBe(0);
+  test('No arguments returns undefined', () => {
+    expect(avg()).toBeUndefined();
   });
 
   test('Argument is not an array of numbers returns undefined', () => {
@@ -11,8 +11,8 @@ describe('--- AVG ---', () => {
     expect(avg(['string', {}, [null]])).toBeUndefined();
   });
 
-  test('Empty array as argument returns 0', () => {
-    expect(avg([])).toBe(0);
+  test('Empty array as argument returns undefined', () => {
+    expect(avg([])).toBeUndefined();
   });
 
   test('Average 4 and 6', () => {
