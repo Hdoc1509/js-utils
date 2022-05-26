@@ -1,5 +1,5 @@
 const cuadratic = ({ coeA = 0, coeB = 0, coeC = 0 }) => {
-  const discriminant = coeB ** 2 - 4 * coeB * coeC;
+  const discriminant = coeB ** 2 - 4 * coeA * coeC;
 
   if (discriminant < 0) return;
 
