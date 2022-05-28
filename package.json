@@ -5,14 +5,22 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "build": "esbuild index.js --bundle --format=esm --outdir=dist"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "js-utils",
+    "utils"
+  ],
+  "author": "Hdoc1509",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "7.18.0",
     "esbuild": "0.14.41",
     "jest": "28.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hdoc1509/js-utils.git"
   }
 }
