@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest --verbose",
-    "build": "esbuild index.js --bundle --format=esm --outdir=dist"
+    "build": "node build.js"
   },
   "keywords": [
     "js-utils",
