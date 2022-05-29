@@ -1,4 +1,4 @@
-import { arrayOfNumbers } from '../../utils/array.js';
+import { arrayOfNumbers } from '../../src/array.js';
 
 describe('--- ARRAY OF NUMBERS', () => {
   test('No argument returns false', () => {
