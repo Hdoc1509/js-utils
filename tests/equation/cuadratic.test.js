@@ -1,4 +1,4 @@
-import EQN from '../../utils/equation.js';
+import EQN from '../../src/equation.js';
 
 describe('--- Cuadratic Equation ---', () => {
   test('No argument returns {root1: 0, root2: 0}', () => {
