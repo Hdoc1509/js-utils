@@ -8,6 +8,7 @@ esbuild.build({
     'src/equation.js',
     'src/form.js',
   ],
+  bundle: true,
   format: 'esm',
   outdir: 'dist',
   minify: true,
