@@ -1,4 +1,4 @@
-import { avg } from '../../utils/arith.js';
+import { avg } from '../../src/arith.js';
 
 describe('--- AVG ---', () => {
   test('No arguments returns undefined', () => {

@@ -1,4 +1,4 @@
-import { sum } from '../../utils/arith.js';
+import { sum } from '../../src/arith.js';
 
 describe('--- SUM ---', () => {
   test('No argument returns undefined', () => {
