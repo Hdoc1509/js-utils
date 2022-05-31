@@ -1,4 +1,13 @@
-const cuadratic = ({ coeA = 1, coeB = 0, coeC = 0 } = {}) => {
+const cuadratic = ({
+  coeA = 0,
+  coeB = 0,
+  coeC = 0,
+  ...notAllowedProps
+} = {}) => {
+  if (coeA <= 0) return;
+
+  if (Object.keys(notAllowedProps).length > 0) return;
+
   const discriminant = coeB ** 2 - 4 * coeA * coeC;
 
   if (discriminant < 0) return;
