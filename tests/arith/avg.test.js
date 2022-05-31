@@ -1,6 +1,6 @@
 import { avg } from '../../src/arith.js';
 
-describe('--- AVG ---', () => {
+describe('--- Arithmetic Average ---', () => {
   test('No arguments returns undefined', () => {
     expect(avg()).toBeUndefined();
   });

@@ -1,6 +1,6 @@
 import { arrayOfNumbers } from '../../src/array.js';
 
-describe('--- ARRAY OF NUMBERS', () => {
+describe('--- Array of numbers ---', () => {
   test('No argument returns false', () => {
     expect(arrayOfNumbers([])).toBe(false);
   });

@@ -1,6 +1,6 @@
 import { sum } from '../../src/arith.js';
 
-describe('--- SUM ---', () => {
+describe('--- Sum of numbers ---', () => {
   test('No argument returns undefined', () => {
     expect(sum()).toBeUndefined();
   });
