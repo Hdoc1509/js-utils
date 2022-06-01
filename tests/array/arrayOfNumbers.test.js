@@ -2,7 +2,7 @@ import { arrayOfNumbers } from '../../src/array.js';
 
 describe('--- Array of numbers ---', () => {
   test('No argument returns false', () => {
-    expect(arrayOfNumbers([])).toBe(false);
+    expect(arrayOfNumbers()).toBe(false);
   });
 
   test('Argument is not an array of numbers returns false', () => {
