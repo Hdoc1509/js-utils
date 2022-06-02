@@ -13,19 +13,19 @@ describe('--- DOM gid ---', () => {
   `;
 
   test('No argument returns null', () => {
-    const element = gid();
+    const $element = gid();
 
-    expect(element).toBeNull();
+    expect($element).toBeNull();
   });
 
   test('Getting the element by id correctly', () => {
-    const element1 = gid('text1');
-    const element2 = gid('text2');
+    const $element1 = gid('text1');
+    const $element2 = gid('text2');
 
-    expect(element1).toBeDefined();
-    expect(element1.textContent).toBe('Text 1');
+    expect($element1).toBeDefined();
+    expect($element1.textContent).toBe('Text 1');
 
-    expect(element2).toBeDefined();
-    expect(element2.textContent).toBe('Text 2');
+    expect($element2).toBeDefined();
+    expect($element2.textContent).toBe('Text 2');
   });
 });
