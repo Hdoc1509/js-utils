@@ -1,6 +1,6 @@
 const d = document;
 
-export const gid = (id = '', parent = d) => parent.getElementById(id);
+export const gid = (id, parent = d) => parent.getElementById(id);
 
 export const qs = (selector, parent = d) => parent.querySelector(selector);
 
