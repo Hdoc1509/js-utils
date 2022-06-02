@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest tests --verbose --colors",
+    "test": "jest tests --verbose --colors ",
     "build": "node build.js"
   },
   "keywords": [
@@ -19,6 +19,7 @@
     "@types/jest": "27.5.1",
     "esbuild": "0.14.41",
     "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
     "jest-extended": "2.0.0"
   },
   "repository": {
