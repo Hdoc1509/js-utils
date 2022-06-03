@@ -48,7 +48,6 @@ const validOrders = [1, -1, 'r'];
  * Returns a new array sorted according to the specified order
  * @param  {Array<String|Number>}  arr   Array to sort
  * @param  {String|Number} order Specific order
- * @return {Array<String|Number>}       Sorted array
  */
 export const sort = (arr = [], order = 1) => {
   if (!arrayOfNumbers(arr) && !arrayOfStrings(arr)) return;
