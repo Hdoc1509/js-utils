@@ -11,7 +11,7 @@ Download and use utils you want from dist folder.
 - I recommend to put them all in utils folder.
 - Utils are available only as ES modules.
 
-### arith.js
+## arith.js
 
 Provides sum and average functions for array of numbers
 
@@ -43,7 +43,7 @@ console.log(sum(numbers));
 console.log(avg(numbers));
 ```
 
-### array.js
+## array.js
 
 Provides functions and validations for arrays
 
@@ -87,7 +87,7 @@ console.log(sort(strings, 'r'));
 
 _Note: randomElement() and sort() returns a new array_
 
-### dom.js
+## dom.js
 
 Provides simplified names for dom accesing
 
@@ -144,7 +144,7 @@ console.log(qsa('.text'));
 console.log(gid('text1'));
 ```
 
-### equation.js
+## equation.js
 
 Provides a solver for cuadratic equations of the form: ax<sup>2</sup> + bx + c = 0. Where a, b and c are the coefficients of the equation.
 
@@ -163,7 +163,7 @@ const coefficients = {
 console.log(EQN.cuadratic(coefficients));
 ```
 
-### form.js
+## form.js
 
 Provides functions to handle forms.
 
