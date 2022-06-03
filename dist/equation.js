@@ -1,0 +1,1 @@
+var o=Math.pow;var f=({coeA:t=0,coeB:r=0,coeC:u=0}={})=>{if(typeof t!="number"||typeof r!="number"||typeof u!="number"||t<=0)return;let n=o(r,2)-4*t*u;if(n<0)return;let i=Number(((-r+Math.sqrt(n))/(2*t)).toFixed(2)),e=i,s=n===0?i:Number(((-r-Math.sqrt(n))/(2*t)).toFixed(2));return{root1:e,root2:s}},m={cuadratic:f};export{m as default};

@@ -1,0 +1,1 @@
+var e=(t=[])=>!(!Array.isArray(t)||t.length===0||t.filter(r=>typeof r!="number").length>0);var f=(t=[])=>{if(!!e(t))return t.reduce((n,r)=>n+r)},u=(t=[])=>{if(!!e(t))return f(t)/t.length},o={sum:f,avg:u};export{u as avg,o as default,f as sum};
