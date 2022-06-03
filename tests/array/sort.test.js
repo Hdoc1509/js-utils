@@ -46,8 +46,18 @@ describe('--- Sort array of numbers or strings ---', () => {
   });
 
   test('Random order correctly', () => {
-    expect(sort(numsArr, 'r')).toIncludeSameMembers(numsArr);
+    const sortedNumbers = sort(numsArr, 'r');
+    const sortedStrings = sort(wordsArr, 'r');
 
-    expect(sort(wordsArr, 'r')).toIncludeSameMembers(wordsArr);
+    expect(sortedNumbers).toIncludeSameMembers(numsArr);
+    expect(sortedNumbers).not.toEqual([1, 2, 4, 4, 5, 5, 6, 7, 12]);
+
+    expect(sortedStrings).toIncludeSameMembers(wordsArr);
+    expect(sortedStrings).not.toEqual([
+      'fruit',
+      'javascript',
+      'letter',
+      'monitor',
+    ]);
   });
 });
