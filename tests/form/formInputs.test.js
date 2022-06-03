@@ -7,8 +7,8 @@ import { formInputs } from '../../src/form.js';
 describe('--- Form Inputs ---', () => {
   document.body.innerHTML = `
   <form id="test-form">
-    <input type="text" name="usr_name" value="Manfred">
-    <input type="email" name="usr_email" value="manfredman@gmail.com">
+    <input type="text" name="usr_name">
+    <input type="email" name="usr_email">
   </form>
   `;
 
@@ -20,6 +20,10 @@ describe('--- Form Inputs ---', () => {
 
   test('Retrieving data from a HTMLFormElement correctly', () => {
     const $form = document.getElementById('test-form');
+
+    // Setting inputs values
+    $form.children['usr_name'].value = 'Manfred';
+    $form.children['usr_email'].value = 'manfredman@gmail.com';
 
     const data = formInputs($form);
 
