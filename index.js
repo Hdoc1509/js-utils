@@ -1,5 +1,10 @@
-export { default as ARITH, sum, avg } from './dist/arith.js';
-export { arrayOfNumbers } from './dist/array.js';
-export { default as DOM, gid, qs, qsa } from './dist/dom.js';
-export { default as EQN } from './dist/equation.js';
-export { formInputs } from './dist/form.js';
+export { default as Arith, sum, avg } from './src/arith.js';
+export {
+  arrayOfNumbers,
+  arrayOfStrings,
+  randomElement,
+  sort,
+} from './src/array.js';
+export { default as DOM, gid, qs, qsa } from './src/dom.js';
+export { default as EQN } from './src/equation.js';
+export { formInputs } from './src/form.js';
