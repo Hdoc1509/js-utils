@@ -2,7 +2,7 @@
  * Check if an array is an array of numbers, returning true or false as appropiate
  * @param  {Array<Number>}  arr Array to check
  */
-export const arrayOfNumbers = (arr = []) => {
+const arrayOfNumbers = (arr = []) => {
   if (!Array.isArray(arr)) return false;
 
   if (arr.length === 0) return false;
@@ -18,7 +18,7 @@ export const arrayOfNumbers = (arr = []) => {
  * Check if an array is an array of strings, returning true or false as appropiate
  * @param  {Array<String>}  arr Array to check
  */
-export const arrayOfStrings = (arr = []) => {
+const arrayOfStrings = (arr = []) => {
   if (!Array.isArray(arr)) return false;
 
   if (arr.length === 0) return false;
@@ -34,7 +34,7 @@ export const arrayOfStrings = (arr = []) => {
  * Returns a random element from an array
  * @param  {Array} arr Array from which an element will be retrieved
  */
-export const randomElement = (arr) => {
+const randomElement = (arr) => {
   if (!Array.isArray(arr)) return;
 
   if (arr.length === 0) return;
@@ -49,7 +49,7 @@ const validOrders = [1, -1, 'r'];
  * @param  {Array<String|Number>}  arr   Array to sort
  * @param  {String|Number} order Specific order
  */
-export const sort = (arr = [], order = 1) => {
+const sort = (arr = [], order = 1) => {
   if (!arrayOfNumbers(arr) && !arrayOfStrings(arr)) return;
 
   if (!validOrders.includes(order)) return;
@@ -59,18 +59,19 @@ export const sort = (arr = [], order = 1) => {
   if (arrayOfNumbers(arr)) {
     if (order === 1) return arr.map((el) => el).sort((a, b) => a - b);
     if (order === -1) return arr.map((el) => el).sort((a, b) => b - a);
-    if (order === 'r')
-      return arr.map((el) => el).sort(() => 0.5 - Math.random());
+  } else {
+    if (order === 1) return arr.map((el) => el).sort();
+    if (order === -1)
+      return arr
+        .map((el) => el)
+        .sort((a, b) => {
+          if (a > b) return -1;
+          if (b > a) return 1;
+          return 0;
+        });
   }
 
-  if (order === 1) return arr.map((el) => el).sort();
-  if (order === -1)
-    return arr
-      .map((el) => el)
-      .sort((a, b) => {
-        if (a > b) return -1;
-        if (b > a) return 1;
-        return 0;
-      });
   if (order === 'r') return arr.map((el) => el).sort(() => 0.5 - Math.random());
 };
+
+module.exports = { arrayOfNumbers, arrayOfStrings, randomElement, sort };

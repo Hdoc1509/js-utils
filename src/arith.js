@@ -1,10 +1,10 @@
-import { arrayOfNumbers } from './array.js';
+const { arrayOfNumbers } = require('./array');
 
 /**
  * Returns the sum of an array of numbers
  * @param  {Array<Number>}  nums Array of numbers to sum
  */
-export const sum = (nums = []) => {
+const sum = (nums = []) => {
   if (!arrayOfNumbers(nums)) return;
 
   return nums.reduce((prev, current) => prev + current);
@@ -14,8 +14,10 @@ export const sum = (nums = []) => {
  * Returns the arithmetic average of an array of numbers
  * @param  {Array<Number>}  nums Array of numbers for get average
  */
-export const avg = (nums = []) => {
+const avg = (nums = []) => {
   if (!arrayOfNumbers(nums)) return;
 
   return sum(nums) / nums.length;
 };
+
+module.exports = { sum, avg };
