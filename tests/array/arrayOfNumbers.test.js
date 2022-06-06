@@ -1,4 +1,4 @@
-import { arrayOfNumbers } from '../../src/array.js';
+const { arrayOfNumbers } = require('../../utils/array');
 
 describe('--- Array of numbers ---', () => {
   test('No argument returns false', () => {

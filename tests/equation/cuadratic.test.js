@@ -1,4 +1,4 @@
-import EQN from '../../src/equation.js';
+const EQN = require('../../utils/equation');
 
 describe('--- Cuadratic Equation ---', () => {
   test('No argument returns undefined', () => {

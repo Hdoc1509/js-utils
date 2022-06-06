@@ -1,5 +1,5 @@
-import { sort } from '../../src/array.js';
-import { toIncludeSameMembers } from 'jest-extended';
+const { sort } = require('../../utils/array');
+const { toIncludeSameMembers } = require('jest-extended');
 
 expect.extend({ toIncludeSameMembers });
 

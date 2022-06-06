@@ -1,4 +1,4 @@
-import { avg } from '../../src/arith.js';
+const { avg } = require('../../utils/arith');
 
 describe('--- Arithmetic Average ---', () => {
   test('No arguments returns undefined', () => {

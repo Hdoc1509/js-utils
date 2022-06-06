@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import { qs } from '../../src/dom.js';
+const { qs } = require('../../utils/dom');
 
 describe('--- DOM qs ---', () => {
   document.body.innerHTML = `

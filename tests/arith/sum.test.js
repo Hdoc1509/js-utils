@@ -1,4 +1,4 @@
-import { sum } from '../../src/arith.js';
+const { sum } = require('../../utils/arith');
 
 describe('--- Sum of numbers ---', () => {
   test('No argument returns undefined', () => {

@@ -1,5 +1,5 @@
-import { randomElement } from '../../src/array.js';
-import { toBeOneOf } from 'jest-extended';
+const { randomElement } = require('../../utils/array');
+const { toBeOneOf } = require('jest-extended');
 
 expect.extend({ toBeOneOf });
 

@@ -1,4 +1,4 @@
-import { arrayOfStrings } from '../../src/array.js';
+const { arrayOfStrings } = require('../../utils/array');
 
 describe('--- Array of strings', () => {
   test('No argument returns false', () => {
