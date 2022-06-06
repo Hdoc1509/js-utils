@@ -33,4 +33,4 @@ const cuadratic = ({ coeA = 0, coeB = 0, coeC = 0 } = {}) => {
   return { root1, root2 };
 };
 
-export default { cuadratic };
+export const eqn = { cuadratic };

@@ -19,5 +19,3 @@ export const avg = (nums = []) => {
 
   return sum(nums) / nums.length;
 };
-
-export default { sum, avg };
