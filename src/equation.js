@@ -6,7 +6,7 @@
  * @param  {Number} [options.coeC] Coefficient C
  * @return {{root1: Number, root2: Number}} Object with roots for solve the cuadratic equation
  */
-const cuadratic = ({ coeA = 0, coeB = 0, coeC = 0 } = {}) => {
+export const cuadratic = ({ coeA = 0, coeB = 0, coeC = 0 } = {}) => {
   if (
     typeof coeA !== 'number' ||
     typeof coeB !== 'number' ||
@@ -32,5 +32,3 @@ const cuadratic = ({ coeA = 0, coeB = 0, coeC = 0 } = {}) => {
 
   return { root1, root2 };
 };
-
-export const eqn = { cuadratic };
