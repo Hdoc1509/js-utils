@@ -1,7 +1,7 @@
 {
-  "name": "@hdoc15/js-utils",
+  "name": "@hdoc1509/js-utils",
   "version": "1.1.0",
-  "description": "",
+  "description": "Different utils for javascript",
   "main": "index.js",
   "scripts": {
     "test": "jest tests --verbose --colors ",
@@ -21,9 +21,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hdoc1509/js-utils.git"
+    "url": "git+https://github.com/Hdoc1509/js-utils.git"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/Hdoc1509/js-utils/issues"
+  },
+  "homepage": "https://github.com/Hdoc1509/js-utils#readme",
+  "directories": {
+    "test": "tests"
   }
 }
