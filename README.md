@@ -2,37 +2,18 @@
 
 Different utils for javascript
 
-## How to use
+## Installation
 
-Download and use utils you want from dist folder.
+```sh
+npm install --save-dev @hdoc15/js-utils
+```
 
-**Notes:**
-
-- I recommend to put them all in utils folder.
-- Utils are available only as ES modules.
-
-## arith.js
+## Arithmetic functions
 
 Provides sum and average functions for array of numbers
 
-You can use the default import ...
-
 ```js
-import Arith from './utils/arith.js';
-
-const numbers = [1, 2, 3];
-
-// logs 6
-console.log(Arith.sum(numbers));
-
-// logs 3
-console.log(Arith.avg(numbers));
-```
-
-Or named imports ...
-
-```js
-import { avg, sum } from './utils/arith.js';
+const { sum, avg } = require('@hdoc15/js-utils');
 
 const numbers = [1, 2, 3];
 
@@ -43,17 +24,17 @@ console.log(sum(numbers));
 console.log(avg(numbers));
 ```
 
-## array.js
+## Array functions
 
 Provides functions and validations for arrays
 
 ```js
-import {
+const {
   arrayOfNumbers,
   arrayOfStrings,
   randomElement,
   sort,
-} from './utils/array.js';
+} = require('@hdoc15/js-utils');
 
 const numbers = [1, 2, 3];
 const strings = ['string', 'word', 'random'];
@@ -85,9 +66,9 @@ console.log(sort(numbers, 'r'));
 console.log(sort(strings, 'r'));
 ```
 
-_Note: randomElement() and sort() returns a new array_
+_Note: randomElement() and sort() returns a new array._
 
-## dom.js
+## DOM accesing
 
 Provides simplified names for dom accesing
 
@@ -114,25 +95,8 @@ Having the next html file ...
 </html>
 ```
 
-Using default import ...
-
 ```js
-import DOM from './utils/dom.js';
-
-// logs main tag
-console.log(DOM.qs('main'));
-
-// logs NodeList of elements with class 'text' as an array
-console.log(DOM.qsa('.text'));
-
-// logs element with id text1
-console.log(DOM.gid('text1'));
-```
-
-Or named imports ...
-
-```js
-import { qs, qsa, gid } from './utils/dom.js';
+const { qs, qsa, gid } = require('@hdoc15/js-utils');
 
 // logs main tag
 console.log(qs('main'));
@@ -144,14 +108,12 @@ console.log(qsa('.text'));
 console.log(gid('text1'));
 ```
 
-## equation.js
+## Equation functions
 
 Provides a solver for cuadratic equations of the form: ax<sup>2</sup> + bx + c = 0. Where a, b and c are the coefficients of the equation.
 
-_Note: This module use a default export, so you need to use default import_
-
 ```js
-import EQN from './utils/equation.js';
+const { equation } = require('@hdoc15/js-utils');
 
 const coefficients = {
   coeA: 2,
@@ -160,10 +122,10 @@ const coefficients = {
 };
 
 // logs { root1: 0, root2: -0.5 }
-console.log(EQN.cuadratic(coefficients));
+console.log(equation.cuadratic(coefficients));
 ```
 
-## form.js
+## Form functions
 
 Provides functions to handle forms.
 
@@ -189,8 +151,7 @@ Having the next html file ...
 ```
 
 ```js
-import { gid } from './utils/dom.js';
-import { formInputs } from './utils/form.js';
+const { gid, formInputs } = require('@hdoc15/js-utils');
 
 gid('my-form').addEventListener('submit', (e) => {
   e.preventDefault();
@@ -202,4 +163,4 @@ gid('my-form').addEventListener('submit', (e) => {
 });
 ```
 
-_Note: formInputs() returns an object with keys as the name attributes of each input element of the form and its correspondent values_
+_Note: formInputs() returns an object with data of each input that have name attribute._
