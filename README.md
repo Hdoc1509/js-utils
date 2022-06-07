@@ -5,7 +5,7 @@ Different utils for javascript
 ## Installation
 
 ```sh
-npm install --save-dev @hdoc15/js-utils
+npm install --save-dev @hdoc1509/js-utils
 ```
 
 ## Arithmetic functions
