@@ -5,7 +5,7 @@ Different utils for javascript
 ## Installation
 
 ```sh
-npm install --save-dev @hdoc1509/js-utils
+npm install --save-dev @hdoc/js-utils
 ```
 
 ## Arithmetic functions
@@ -13,7 +13,7 @@ npm install --save-dev @hdoc1509/js-utils
 Provides sum and average functions for array of numbers
 
 ```js
-const { sum, avg } = require('@hdoc15/js-utils');
+const { sum, avg } = require('@hdoc/js-utils');
 
 const numbers = [1, 2, 3];
 
@@ -34,7 +34,7 @@ const {
   arrayOfStrings,
   randomElement,
   sort,
-} = require('@hdoc15/js-utils');
+} = require('@hdoc/js-utils');
 
 const numbers = [1, 2, 3];
 const strings = ['string', 'word', 'random'];
@@ -96,7 +96,7 @@ Having the next html file ...
 ```
 
 ```js
-const { qs, qsa, gid } = require('@hdoc15/js-utils');
+const { qs, qsa, gid } = require('@hdoc/js-utils');
 
 // logs main tag
 console.log(qs('main'));
@@ -113,7 +113,7 @@ console.log(gid('text1'));
 Provides a solver for cuadratic equations of the form: ax<sup>2</sup> + bx + c = 0. Where a, b and c are the coefficients of the equation.
 
 ```js
-const { equation } = require('@hdoc15/js-utils');
+const { equation } = require('@hdoc/js-utils');
 
 const coefficients = {
   coeA: 2,
@@ -151,7 +151,7 @@ Having the next html file ...
 ```
 
 ```js
-const { gid, formInputs } = require('@hdoc15/js-utils');
+const { gid, formInputs } = require('@hdoc/js-utils');
 
 gid('my-form').addEventListener('submit', (e) => {
   e.preventDefault();
