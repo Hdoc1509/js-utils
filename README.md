@@ -129,6 +129,8 @@ Having the next html file ...
 </html>
 ```
 
+You need to import in main.js ...
+
 ```js
 import { qs, qsa, gid } from './utils/dom.js';
 
@@ -166,6 +168,8 @@ Having the next html file ...
   </body>
 </html>
 ```
+
+You need to import in main.js ...
 
 ```js
 import { gid } from './utils/dom.js';
