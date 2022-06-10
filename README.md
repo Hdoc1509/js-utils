@@ -2,6 +2,15 @@
 
 Different utils for javascript
 
+## Index
+
+- [Arithmetic function](#arithmetic-functions)
+- [Array functions](#array-functions)
+- [Equation functions](#equation-functions)
+- [Browser utils](#browser-utils)
+  - [DOM](#dom-accesing)
+  - [Form functions](#form-functions)
+
 ## Installation
 
 ```sh
@@ -68,9 +77,32 @@ console.log(sort(strings, 'r'));
 
 _Note: randomElement() and sort() returns a new array._
 
+## Equation functions
+
+Provides a solver for cuadratic equations of the form: ax<sup>2</sup> + bx + c = 0. Where a, b and c are the coefficients of the equation.
+
+```js
+const { equation } = require('@hdoc/js-utils');
+
+const coefficients = {
+  coeA: 2,
+  coeB: 1,
+  coeC: 0,
+};
+
+// logs { root1: 0, root2: -0.5 }
+console.log(equation.cuadratic(coefficients));
+```
+
+## Browser utils
+
+Browser utils are only available as ESModules. You need to download them from utils/browser folder.
+
+_Note: I recommend to place the utils files in utils folders_
+
 ## DOM accesing
 
-Provides simplified names for dom accesing
+Provides simplified function names for dom accesing.
 
 Having the next html file ...
 
@@ -96,7 +128,7 @@ Having the next html file ...
 ```
 
 ```js
-const { qs, qsa, gid } = require('@hdoc/js-utils');
+import { qs, qsa, gid } from './utils/dom.js';
 
 // logs main tag
 console.log(qs('main'));
@@ -106,23 +138,6 @@ console.log(qsa('.text'));
 
 // logs element with id text1
 console.log(gid('text1'));
-```
-
-## Equation functions
-
-Provides a solver for cuadratic equations of the form: ax<sup>2</sup> + bx + c = 0. Where a, b and c are the coefficients of the equation.
-
-```js
-const { equation } = require('@hdoc/js-utils');
-
-const coefficients = {
-  coeA: 2,
-  coeB: 1,
-  coeC: 0,
-};
-
-// logs { root1: 0, root2: -0.5 }
-console.log(equation.cuadratic(coefficients));
 ```
 
 ## Form functions
@@ -151,7 +166,8 @@ Having the next html file ...
 ```
 
 ```js
-const { gid, formInputs } = require('@hdoc/js-utils');
+import { gid } from './utils/dom.js';
+import { formInputs } from './utils/form.js';
 
 gid('my-form').addEventListener('submit', (e) => {
   e.preventDefault();
