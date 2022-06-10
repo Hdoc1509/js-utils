@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { qsa } = require('../../utils/dom');
+const { qsa } = require('../../utils/browser/dom');
 
 describe('--- DOM qsa ---', () => {
   document.body.innerHTML = `

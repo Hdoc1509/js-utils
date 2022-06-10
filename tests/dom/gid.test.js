@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { gid } = require('../../utils/dom');
+const { gid } = require('../../utils/browser/dom');
 
 describe('--- DOM gid ---', () => {
   document.body.innerHTML = `
