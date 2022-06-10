@@ -72,5 +72,6 @@
         "requireStringLiterals": true
       }
     ]
-  }
+  },
+  "ignorePatterns": ["README.md"]
 }
