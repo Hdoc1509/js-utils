@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { formInputs } = require('../../utils/form');
+const { formInputs } = require('../../utils/browser/form');
 
 describe('--- Form Inputs ---', () => {
   document.body.innerHTML = `
