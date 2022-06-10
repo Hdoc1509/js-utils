@@ -94,6 +94,8 @@ const coefficients = {
 console.log(equation.cuadratic(coefficients));
 ```
 
+---
+
 ## Browser utils
 
 Browser utils are only available as ESModules. You need to download them from utils/browser folder.
