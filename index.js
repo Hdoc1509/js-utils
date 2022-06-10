@@ -5,8 +5,6 @@ const {
   sort,
   randomElement,
 } = require('./utils/array');
-const { gid, qs, qsa } = require('./utils/dom');
-const { formInputs } = require('./utils/form');
 
 exports.equation = require('./utils/equation');
 module.exports = {
@@ -16,8 +14,4 @@ module.exports = {
   arrayOfStrings,
   sort,
   randomElement,
-  gid,
-  qs,
-  qsa,
-  formInputs,
 };
